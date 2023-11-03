@@ -2,4 +2,16 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: url("../images/cover-image-dark.png");
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+}
+
+/*header*/
+
+.header {
+  display: grid;
 }
