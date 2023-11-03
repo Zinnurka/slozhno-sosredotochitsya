@@ -14,4 +14,39 @@
 
 .header {
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr;  
+  align-items: center;
+  padding: 20px;  
+}
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.title {
+  color: #DB00FF;
+  text-shadow: 4px 4px 0px #FF0070;
+  line-height: 82.5%;
+  font-weight: 700;
+  font-size: clamp(116px, 157px, 157px);
+}
+
+.title_description {
+  justify-self: end;
+  width: 100%; 
+  max-width: 491px; /* максимальная ширина блока */
+  background-color: #FF0070;
+  font-family: inherit;
+  font-weight: 700;
 }
