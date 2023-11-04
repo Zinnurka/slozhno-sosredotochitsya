@@ -32,7 +32,7 @@
 
 .header__theme-menu-button {
   border: 1px solid transparent;
-  color:#FF0070;
+  color:var(--accent-color);
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
@@ -45,15 +45,15 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: 1px solid #FF0070;
+  border: 1px solid var(--accent-color);
 }
 
 .title {
-  color: #DB00FF;
+  color: var(--title-color);
   font-weight: 700;
   font-size: 116px; 
   line-height: 82.5%;
-  text-shadow: 4px 4px 0px #FF0070;
+  text-shadow: 4px 4px 0px var(--accent-color);
   padding-top: 15px;
 }
 
@@ -63,7 +63,7 @@
   min-width: 355px; /* максимальная ширина блока */
   font-family: inherit;
   font-weight: 700;
-  background-color: #FF0070;
+  background-color: var(--accent-color);
 }
 
 
