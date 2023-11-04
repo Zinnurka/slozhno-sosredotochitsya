@@ -16,7 +16,8 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;  
   align-items: center;
-  padding: 20px;  
+  justify-content: center;
+  padding: 20px;
 }
 
 .header__theme-menu {
@@ -53,6 +54,7 @@
   font-size: 116px; 
   line-height: 82.5%;
   text-shadow: 4px 4px 0px #FF0070;
+  padding-top: 15px;
 }
 
 .title_description {
@@ -65,19 +67,45 @@
 }
 
 
+/*Адаптив для планшетов*/
+
 @media (min-width: 768px) and (max-width:1023.99px) {
+  
+  .header {
+    gap: 162px;
+    justify-content: normal;
+  }
+  
   .title {
     font-size: 120px;
   }
 
   .title_description {
-    width: 50%;
-    min-width: 364px;
+    width: 100%;
+    max-width: 491px;
   }
   
 }
 
+/*Адаптив для десктоп*/
+
 @media (min-width: 1024px) {
+
+  .header {
+    gap: 162px;
+    justify-content: normal;
+    align-items: start
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+
+  }
+
   .title {
     font-size: 157px;
   }
