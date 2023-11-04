@@ -1,13 +1,13 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-image: url("../images/cover-image-dark.png");
-  background-size: cover;
-  background-position: top center;
-  background-attachment: fixed;
   font-family: IBM Plex Mono;
   font-size: 18px;
+  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: url("../images/cover-image-dark.png");
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /*header*/
@@ -30,23 +30,36 @@
 }
 
 .header__theme-menu-button {
+  border: 1px solid transparent;
+  color:#FF0070;
   font-family: inherit;
+  font-weight: 400;
   font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: lowercase;
+  background-color: transparent;
+  padding: 0px, 13px;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid #FF0070;
 }
 
 .title {
   color: #DB00FF;
-  text-shadow: 4px 4px 0px #FF0070;
-  line-height: 82.5%;
   font-weight: 700;
-  font-size: clamp(116px, 157px, 157px);
+  font-size: clamp(116px, 116px, 157px); /*минимальная высота и максимальная*/
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0px #FF0070;
 }
 
 .title_description {
   justify-self: end;
   width: 100%; 
-  max-width: 491px; /* максимальная ширина блока */
-  background-color: #FF0070;
+  max-width: 355px; /* максимальная ширина блока */
   font-family: inherit;
   font-weight: 700;
+  background-color: #FF0070;
 }
