@@ -50,7 +50,7 @@
 .title {
   color: #DB00FF;
   font-weight: 700;
-  font-size: clamp(116px, 116px, 157px); /*минимальная высота и максимальная*/
+  font-size: 116px; 
   line-height: 82.5%;
   text-shadow: 4px 4px 0px #FF0070;
 }
@@ -58,8 +58,31 @@
 .title_description {
   justify-self: end;
   width: 100%; 
-  max-width: 355px; /* максимальная ширина блока */
+  min-width: 355px; /* максимальная ширина блока */
   font-family: inherit;
   font-weight: 700;
   background-color: #FF0070;
+}
+
+
+@media (min-width: 768px) and (max-width:1023.99px) {
+  .title {
+    font-size: 120px;
+  }
+
+  .title_description {
+    width: 50%;
+    min-width: 364px;
+  }
+  
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 157px;
+  }
+
+  .title_description {
+    max-width: 50%;
+  }
 }
