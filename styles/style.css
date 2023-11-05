@@ -134,11 +134,25 @@ main {
   line-height: 23.4px;
 }
 
+.article_subtitle {
+  background-color: var(--accent-color);
+  color: #000028;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
 .why_focus_is_so_hard {
   display: grid;
 }
 
 .what_reduces_concentration_of_attention {
+  display: grid;
+}
+
+.how_to_concentrate_better_than_a_goldfish {
   display: grid;
 }
 
@@ -172,6 +186,11 @@ main {
 
   .what_reduces_concentration_of_attention > .section_title {
     width: 236px;
+  }
+
+  .how_to_concentrate_better_than_a_goldfish {
+    grid-template-columns: 1fr 472px;
+    gap: 20px
   }
 
 }
@@ -214,6 +233,11 @@ main {
   .what_reduces_concentration_of_attention > .articles_list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .how_to_concentrate_better_than_a_goldfish {
+    grid-template-columns: 1fr 648px;
     gap: 20px;
   }
 
