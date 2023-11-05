@@ -1,13 +1,13 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  padding: 20px;
   font-family: IBM Plex Mono;
   font-size: 18px;
   background-image: url("../images/cover-image-dark.png");
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 20px;
 }
 
 /*header*/
@@ -15,9 +15,9 @@
 .header {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  height: 100vh;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 /* декоративные элементы REC в header*/
@@ -98,8 +98,8 @@
   min-width: 355px; /* максимальная ширина блока */
   font-family: inherit;
   font-weight: 700;
-  background-color: var(--accent-color);
   line-height: 23.4px;
+  background-color: var(--accent-color);
 }
 
 main {
@@ -111,24 +111,26 @@ main {
 .section_title {
   color: var(--accent-color);
   font-family: inherit;
+  font-weight: 700;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
   line-height: 23.4px;
 }
 
 .article_title {
-  background-color: var(--accent-color);
-  font-size: 18px;
   font-family: inherit;
+  font-size: 18px;
+  background-color: var(--accent-color);
 }
 
 .article_text {
+  padding-top: 10px;
+  padding-bottom: 20px;
   color: #f1b2ce;
   font-family: inherit;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 23.4px;
 }
 
@@ -136,7 +138,11 @@ main {
   display: grid;
 }
 
-/*Адаптив для планшетов*/
+.what_reduces_concentration_of_attention {
+  display: grid;
+}
+
+/*Адаптив для 768px*/
 
 @media (min-width: 768px) and (max-width: 1023.99px) {
   .header {
@@ -155,12 +161,22 @@ main {
   }
 
   .why_focus_is_so_hard {
-    gap: 20px;
     grid-template-columns: 1fr 472px;
+    gap: 20px;
   }
+
+  .what_reduces_concentration_of_attention {
+    grid-template-rows: min-content 1fr;
+    gap:20px;
+  }
+
+  .what_reduces_concentration_of_attention > .section_title {
+    width: 236px;
+  }
+
 }
 
-/*Адаптив для десктоп*/
+/*Адаптив для 1024px*/
 
 @media (min-width: 1024px) {
   .header {
@@ -187,7 +203,18 @@ main {
   }
 
   .why_focus_is_so_hard {
-    gap: 20px;
     grid-template-columns: 1fr 648px;
+    gap: 20px;
   }
+
+  .what_reduces_concentration_of_attention > .section_title {
+    width: 315px;
+  }
+
+  .what_reduces_concentration_of_attention > .articles_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
 }
