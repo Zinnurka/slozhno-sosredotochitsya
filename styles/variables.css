@@ -6,4 +6,6 @@
 :root {
   --accent-color: #FF0070;
   --title-color: #DB00FF;
+  --accent-background: #000028;
+  --accent-background-image: url(../images/cover-image-dark.png);
 }
