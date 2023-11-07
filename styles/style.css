@@ -6,8 +6,9 @@
   background-color: var(--accent-background);
   background-image: var(--accent-background-image);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
+  max-width: 375px;
   background-attachment: fixed;
 }
 
@@ -122,7 +123,7 @@ main {
   padding-left: 10px;
   padding-top: 40px;
   padding-bottom: 40px;
-  background: #000028;
+  background:var(--accent-background);
 }
 
 /* Артикли */
@@ -161,7 +162,7 @@ main {
 }
 
 .article_subtitle {
-  color: #000028;
+  color: var (--accent-background);
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
@@ -197,6 +198,7 @@ main {
 
 .footer {
   display: flex;
+  background-color: var(--accent-background);
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -204,7 +206,7 @@ main {
 }
 
 .footer_title {  
-  color: #DB00FF;
+  color: var( --title-color);
   font-weight: 700;
   font-size: 116px;
   line-height: 82.5%;
@@ -214,6 +216,10 @@ main {
 /*Адаптив для 768px*/
 
 @media (min-width: 768px) and (max-width: 1023.99px) {
+  
+  .page {
+    max-width: 768px;
+  }
   
   .header {
     justify-content: normal;
@@ -303,6 +309,11 @@ main {
 /*Адаптив для 1024px*/
 
 @media (min-width: 1024px) {
+
+  .page {
+    max-width: 1024px;
+  }
+
   .header {
     align-items: start;
     gap: 114px;
