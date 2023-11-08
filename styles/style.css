@@ -76,7 +76,7 @@
 .header__theme-menu-button {
   border: 1px solid transparent;
   padding: 0px, 13px;
-  color: var(--accent-color);
+  color: var(--menu-color);
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
@@ -91,7 +91,7 @@
   justify-content: center;
   align-items: center;
   height: 26px;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--menu-color);
   padding: 0px 13px; 
 }
 
@@ -106,12 +106,13 @@
 
 .title_description {
   justify-self: end;
+  color: var(--text-color);
   width: 100%;
   min-width: 355px;
   font-family: inherit;
   font-weight: 700;
   line-height: 23.4px;
-  background-color: var(--accent-color);
+  background-color: var(--main-color-decor);
 }
 
 main {
@@ -130,7 +131,7 @@ main {
 .section_title {
   display: flex;
   gap:10px;
-  color: var(--accent-color);
+  color: var(--h2-text-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -147,12 +148,14 @@ main {
 .article_title {
   font-family: inherit;
   font-size: 18px;
-  background-color: var(--accent-color);
+  color: var(---article-text-color);
+  background-color: var(--main-color-decor);
+  font-weight: 700;
 }
 
 .article_text {
   padding-top: 10px;
-  color: #f1b2ce;
+  color: var(--article-text-color);
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
@@ -167,7 +170,7 @@ main {
   font-size: 18px;
   font-style: normal;
   line-height: 23.4px;
-  background-color: var(--accent-color);
+  background-color: var(--main-color-decor);
 }
 
 .why_focus_is_so_hard {
