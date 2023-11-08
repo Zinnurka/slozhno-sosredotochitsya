@@ -224,6 +224,16 @@ main {
     padding: 178px 20px 20px 20px;
   }
 
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
+  }
+
+  .decorated-zone::after {
+    bottom: 20px;
+    left: 20px;
+  }
+
   .title {
     position: relative;
     right: 20px;
@@ -323,6 +333,16 @@ main {
     align-items: start;
     gap: 114px;
     padding: 20px;
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
+  }
+
+  .decorated-zone::after {
+    bottom: 20px;
+    left: 20px;
   }
 
   .header__theme-menu {
