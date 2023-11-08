@@ -13,4 +13,7 @@
   --text-color: #000028;
   --h2-text-color: #FF0070;
   --article-text-color: #F1B2CE;
+  --decor: "REC ";
+  --decor-circle: url('data:image/svg+xml,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle fill="%23FF0070" filter="drop-shadow(0px 0px 4px %23FF0070)" cx="50" cy="50" r="42" /></svg>')
+
 }

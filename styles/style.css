@@ -25,7 +25,7 @@
 /* декоративные элементы REC в header*/
 
 .decorated-zone::before {
-  content: "REC ";
+  content: var(--decor);
   position: absolute;
   top: 10px;
   right: 10px;
@@ -39,7 +39,7 @@
   color: var(--accent-color);
   fill: var(--accent-color);
   font-size: inherit;
-  background-image: url('data:image/svg+xml,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle fill="%23FF0070" filter="drop-shadow(0px 0px 4px %23FF0070)" cx="50" cy="50" r="42" /></svg>');
+  background-image: var(--decor-circle);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 13px;
@@ -106,9 +106,9 @@
 
 .title_description {
   justify-self: end;
-  color: var(--text-color);
   width: 100%;
   min-width: 355px;
+  color: var(--text-color);
   font-family: inherit;
   font-weight: 700;
   line-height: 23.4px;
@@ -119,10 +119,10 @@ main {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding-right: 10px;
-  padding-left: 10px;
   padding-top: 40px;
+  padding-right: 10px;
   padding-bottom: 40px;
+  padding-left: 10px;
   background:var(--accent-background);
 }
 
@@ -146,11 +146,11 @@ main {
 }
 
 .article_title {
-  font-family: inherit;
-  font-size: 18px;
   color: var(---article-text-color);
-  background-color: var(--main-color-decor);
+  font-family: inherit;
   font-weight: 700;
+  font-size: 18px;
+  background-color: var(--main-color-decor);
 }
 
 .article_text {
@@ -200,11 +200,11 @@ main {
 
 .footer {
   display: flex;
-  background-color: var(--accent-background);
   justify-content: center;
   align-items: center;
   height: 100vh;
   padding: var(--padding);
+  background-color: var(--accent-background);
 }
 
 .footer_title {  
@@ -238,10 +238,10 @@ main {
 
   main {
     gap: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
     padding-top: 60px;
+    padding-right: 20px;
     padding-bottom: 60px;
+    padding-left: 20px;
   }
 
   .why_focus_is_so_hard {
@@ -314,10 +314,10 @@ main {
 @media (min-width: 1024px) {
 
   .header {
+    position: relative;
     align-items: start;
     gap: 114px;
     padding: 20px;
-    position: relative;
   }
 
   .header__theme-menu {
