@@ -11,3 +11,20 @@
   --decor: "";
   --decor-circle: url('');
 }
+
+@media (prefers-color-scheme: light) {
+
+  :root {
+    --accent-color: #FF0070;
+    --title-color: #FFC2E6;
+    --accent-background: #FFF1F7;
+    --accent-background-image: url(../images/cover-image-light.png);
+    --main-color-decor: #FF8DCB;
+    --menu-color: #353430;
+    --text-color: #353430;
+    --h2-text-color: #353430;
+    --article-text-color: #353430;
+    --decor: "";
+    --decor-circle: url('');
+  }
+}
