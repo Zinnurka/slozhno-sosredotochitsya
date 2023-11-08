@@ -1,5 +1,3 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 18px;
@@ -11,8 +9,6 @@
   background-attachment: fixed;
 }
 
-/*header*/
-
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
@@ -21,8 +17,6 @@
   height: 100vh;
   padding: 10px;
 }
-
-/* декоративные элементы REC в header*/
 
 .decorated-zone::before {
   content: var(--decor);
