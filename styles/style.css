@@ -86,7 +86,7 @@
   align-items: center;
   height: 26px;
   border: 1px solid var(--menu-color);
-  padding: 0px 13px; 
+  padding: 0px 13px;
 }
 
 .title {
@@ -133,7 +133,7 @@ main {
   line-height: 23.4px;
 }
 
-.article{
+.article {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -201,7 +201,7 @@ main {
   background-color: var(--accent-background);
 }
 
-.footer_title {  
+.footer_title {
   color: var( --title-color);
   font-weight: 700;
   font-size: 116px;
