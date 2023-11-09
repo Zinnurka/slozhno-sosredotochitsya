@@ -67,6 +67,7 @@
 }
 
 .header__theme-menu-button {
+  height: 26px;
   border: 1px solid transparent;
   padding: 0 13px;
   color: var(--menu-color);
@@ -74,7 +75,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
-  height: 26px;
   text-align: center;
   text-transform: lowercase;
   background-color: transparent;
@@ -92,13 +92,9 @@
   border: 1px solid var(--menu-color);
 }
 
-.header__theme-menu-button_active {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  height: 26px;
+.header__theme-menu-button_active {  
   border: 1px solid var(--menu-color);
-  padding: 0px 13px;
+  pointer-events: none;
 }
 
 .title {
@@ -406,8 +402,8 @@ main {
   }
 
   .gallery {
-    gap: 25px;
     grid-template-rows: 25% 30% 41%;
+    gap: 25px;
   }
 
   .image_1 {
