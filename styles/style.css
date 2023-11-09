@@ -84,7 +84,7 @@
   outline: none;
 }
 
-.header__theme-menu-button:focus-visible {  
+.header__theme-menu-button:focus-visible {
   border: 1px solid var(--menu-color);
 }
 
@@ -173,6 +173,23 @@ main {
   font-style: normal;
   line-height: 23.4px;
   background-color: var(--main-color-decor);
+}
+
+.article_text_link {
+  text-decoration: none;
+  text-shadow: 2px 2px var(--main-color-decor);
+}
+
+.article_text_link:hover {
+  border-block-end: 1px solid var(--article-text-color);
+}
+
+.article_text_link:focus {
+  border: 1px solid var(--article-text-color);
+}
+
+.article_text_link:focus-visible {
+  border: 1px solid var(--article-text-color);
 }
 
 .why_focus_is_so_hard {
