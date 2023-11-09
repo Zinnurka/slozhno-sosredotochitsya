@@ -148,7 +148,7 @@ main {
 }
 
 .article_title {
-  color: var(---article-text-color);
+  color: var(--article-text-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
