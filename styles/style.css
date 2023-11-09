@@ -27,17 +27,17 @@
   justify-content: flex-end;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--decor-corner);
+  border-right: 1px solid var(--decor-corner);
   padding-right: 25px;
-  color: var(--accent-color);
-  fill: var(--accent-color);
+  color: var(--decor-corner);
+  fill: var(--decor-corner);
   font-size: inherit;
   background-image: var(--decor-circle);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 13px;
-  filter: drop-shadow(0px 0px 4px var(--accent-color));
+  filter: drop-shadow(0px 0px 4px var(--decor-corner));
 }
 
 .decorated-zone::after {
@@ -47,8 +47,8 @@
   left: 10px;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--decor-corner);
+  border-left: 1px solid var(--decor-corner);
 }
 
 .header__theme-menu {
