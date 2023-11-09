@@ -366,16 +366,6 @@ main {
     padding: 20px;
   }
 
-  .decorated-zone::before {
-    top: 20px;
-    right: 20px;
-  }
-
-  .decorated-zone::after {
-    bottom: 20px;
-    left: 20px;
-  }
-
   .header__theme-menu {
     justify-self: center;
   }
