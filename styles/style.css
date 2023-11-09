@@ -92,7 +92,7 @@
   border: 1px solid var(--menu-color);
 }
 
-.header__theme-menu-button_active {  
+.header__theme-menu-button_active {
   border: 1px solid var(--menu-color);
   pointer-events: none;
 }
@@ -221,6 +221,7 @@ main {
 
 .image {
   width: 100%;
+  object-fit: cover;
 }
 
 .footer {
