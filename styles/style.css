@@ -68,7 +68,7 @@
 
 .header__theme-menu-button {
   border: 1px solid transparent;
-  padding: 0px, 13px;
+  padding: 0, 13px;
   color: var(--menu-color);
   font-family: inherit;
   font-weight: 400;
