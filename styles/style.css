@@ -58,7 +58,6 @@
 .header__theme-menu-item {
   display: inline-flex;
   justify-content: center;
-  height: 26px;
 }
 
 .header__theme-menu-list {
