@@ -233,6 +233,10 @@ main {
     left: 20px;
   }
 
+  .header__theme-menu-list {
+    gap: 13px;
+  }
+
   .title {
     position: relative;
     right: 20px;
