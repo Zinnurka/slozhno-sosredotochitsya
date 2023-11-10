@@ -168,7 +168,7 @@ main {
 }
 
 .article_subtitle {
-  color: var(--accent-background);
+  color: var(--text-color);
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
