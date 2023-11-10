@@ -153,8 +153,8 @@ main {
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
-  background-color: var(--main-color-decor);
   line-height: 23.4px;
+  background-color: var(--main-color-decor);
 }
 
 .article_text {
@@ -222,8 +222,8 @@ main {
 
 .image {
   width: 100%;
-  object-fit: cover;
   height: 100%;
+  object-fit: cover;
 }
 
 .footer {
@@ -275,8 +275,8 @@ main {
 
   .title {
     position: relative;
-    padding-top: 0;
     right: 20px;
+    padding-top: 0;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
