@@ -90,7 +90,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--menu-color);
+  border: 1px solid var(--menu-color-transparent40);
 }
 
 .header__theme-menu-button_active {

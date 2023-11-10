@@ -5,6 +5,7 @@
   --accent-background-image: url(../images/cover-image-dark.png);
   --main-color-decor: #FF0070;
   --menu-color: #FF0070;
+  --menu-color-transparent40: rgba(255, 0, 112, 0.40);
   --text-color: #000028;
   --h2-text-color: #FF0070;
   --article-text-color: #F1B2CE;
@@ -21,6 +22,7 @@
     --accent-background-image: url(../images/cover-image-dark.png);
     --main-color-decor: #FF0070;
     --menu-color: #FF0070;
+    --menu-color-transparent40: rgba(255, 0, 112, 0.40);
     --text-color: #000028;
     --h2-text-color: #FF0070;
     --article-text-color: #F1B2CE;
