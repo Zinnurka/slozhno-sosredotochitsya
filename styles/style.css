@@ -86,7 +86,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border: 1px solid var(--menu-color);
+  border-block-end: 1px solid var(--menu-color);
 }
 
 .header__theme-menu-button:hover {
