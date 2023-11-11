@@ -10,6 +10,7 @@
 }
 
 .header {
+  position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   justify-content: center;
@@ -21,23 +22,23 @@
 .decorated-zone::before {
   content: '';
   position: absolute;
-  top: 10px; 
-  right: 10px; 
-  height: 25px;
+  top: 10px;
+  right: 10px;
   width: 25px;
-  border-top: 1px solid var(--decor-corner); 
+  height: 25px;
+  border-top: 1px solid var(--decor-corner);
   border-right: 1px solid var(--decor-corner);
 }
 
 .decorated-zone::after {
   content: '';
   position: absolute;
-  bottom: 10px; 
+  bottom: 10px;
   left: 10px;
-  height: 25px;
   width: 25px;
-  border-bottom: 1px solid var(--decor-corner); 
-  border-left: 1px solid var(--decor-corner); 
+  height: 25px;
+  border-bottom: 1px solid var(--decor-corner);
+  border-left: 1px solid var(--decor-corner);
 }
 
 .rec {
@@ -48,16 +49,16 @@
 }
 
 .rec::after {
+  content: '';
   position: relative;
   top: -2px;
   right: -10px;
-  content: '';
   display: inline-flex;
-  inline-size: 9px;
-  block-size: 9px;
   border-radius: 50%;
   background-color: var(--accent-color);
   filter: drop-shadow(0px 0px 4px var(--accent-color));
+  inline-size: 9px;
+  block-size: 9px;
 }
 
 .header__theme-menu {
@@ -236,6 +237,7 @@ main {
 }
 
 .footer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
