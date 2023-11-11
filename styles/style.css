@@ -19,36 +19,45 @@
 }
 
 .decorated-zone::before {
-  content: var(--decor);
+  content: '';
   position: absolute;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  justify-content: flex-end;
-  width: 25px;
+  top: 10px; 
+  right: 10px; 
   height: 25px;
-  border-top: 1px solid var(--decor-corner);
+  width: 25px;
+  border-top: 1px solid var(--decor-corner); 
   border-right: 1px solid var(--decor-corner);
-  padding-right: 25px;
-  color: var(--decor-corner);
-  fill: var(--decor-corner);
-  font-size: inherit;
-  background-image: var(--decor-circle);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 13px;
-  filter: drop-shadow(0px 0px 4px var(--decor-corner));
 }
 
 .decorated-zone::after {
-  content: "";
+  content: '';
   position: absolute;
-  bottom: 10px;
+  bottom: 10px; 
   left: 10px;
-  width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--decor-corner);
-  border-left: 1px solid var(--decor-corner);
+  width: 25px;
+  border-bottom: 1px solid var(--decor-corner); 
+  border-left: 1px solid var(--decor-corner); 
+}
+
+.rec {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: var(--accent-color);
+}
+
+.rec::after {
+  position: relative;
+  top: -2px;
+  right: -10px;
+  content: '';
+  display: inline-flex;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  filter: drop-shadow(0px 0px 4px var(--accent-color));
 }
 
 .header__theme-menu {
@@ -211,7 +220,7 @@ main {
 
 .images {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .gallery {
