@@ -36,7 +36,7 @@
     --decor-circle: url('');
     --decor-corner: #353430;
   }
-  .theme_light .rec {
+  .rec {
     display: none;
   }
   
