@@ -297,6 +297,7 @@ main {
   }
 
   .title_description {
+    align-self:flex-start;
     width: 100%;
     max-width: 364px;
   }
